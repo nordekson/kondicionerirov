@@ -1,0 +1,178 @@
+/* Общие сбросы */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Тело страницы и фон */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #000;
+}
+
+/* Основной контент */
+main {
+    flex: 1;
+}
+
+/* Ссылки */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Навигация */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.nav-link {
+    font-weight: 700;
+    color: #000 !important;
+}
+
+/* Хиро-секция */
+.hero-overlay {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: transparent !important;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.hero-overlay h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.hero-overlay p {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+/* Информационные таблички */
+.feature-item {
+    background-color: transparent !important;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    color: #000;
+    box-shadow: none !important;
+}
+
+.feature-item h3 {
+    font-weight: 900;
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.feature-item p {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #000;
+}
+
+/* Локация */
+.location {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+/* Футер */
+.footer {
+    background-color: #004aad;
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.1rem;
+    z-index: 1000;
+}
+
+/* Контактная секция */
+.contact-section {
+    max-width: 700px;
+    margin: 120px auto 60px auto;
+    padding: 0 15px;
+    color: #000;
+}
+
+.contact-section h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contact-section p {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+/* Мульти-сплит ссылка */
+.multi-split-link {
+    color: #000;
+    font-weight: 900;
+}
+
+.multi-split-link:hover {
+    color: #004aad;
+    text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .hero-overlay h1 {
+        font-size: 2rem;
+    }
+    .hero-overlay p {
+        font-size: 1rem;
+    }
+    .feature-item h3 {
+        font-size: 1.3rem;
+    }
+    .feature-item p {
+        font-size: 1rem;
+    }
+    .footer {
+        font-size: 1rem;
+    }
+    .contact-section h1 {
+        font-size: 2rem;
+    }
+    .contact-section p {
+        font-size: 1rem;
+    }
+}
+
+/* Статья */
+.article-content {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #222;
+    font-weight: bold;
+}
